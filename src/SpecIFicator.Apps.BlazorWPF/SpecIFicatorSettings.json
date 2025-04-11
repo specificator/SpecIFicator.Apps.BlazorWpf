@@ -1,409 +1,502 @@
 {
-  "appliesTo": "SpecIFicator",
-  "components": [
-    {
-      "title": "Projects Browser",
-      "titleKey": "Title.ProjectsBrowser",
-      "showInMainMenu": true,
-      "id": "8BFC41F3-4CEF-4E37-9AAE-D61A9D189E53",
-      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.ProjectsBrowser",
-      "configurations": []
-    },
-    {
-      "title": "Metadata",
-      "titleKey": "Title.MetadataEditor",
-      "showInMainMenu": true,
-      "id": "4F000F64-9686-45D4-AF19-330889320537",
-      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.MetadataEditor.MetadataEditorPage",
-      "configurations": []
-    },
-    {
-      "title": "Logger",
-      "titleKey": "Title.Logger",
-      "showInMainMenu": true,
-      "id": "187CFC8A-6559-4568-83D6-E69BB6A33B6C",
-      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.DataStreams.DataStreamLoggerPage",
-      "configurations": []
-    },
-    {
-      "title": "FileExport",
-      "showInMainMenu": false,
-      "id": "E4C606C2-E744-4022-A715-D44A4DFC85B6",
-      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.FileExport",
-      "configurations": []
-    },
-    {
-      "title": "HierarchyEditor",
-      "id": "3462ACA8-1AB1-442F-971B-975AF96E0017",
-      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyEditor",
-      "specificTypes": [
-
-      ],
-      "configurations": [
+    "appliesTo": "SpecIFicator",
+    "components": [
         {
-          "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyEditor",
-          "components": [
-            {
-              "title": "Tree",
-              "default": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyTree",
-              "configurations": [
-
-              ]
-            },
-            {
-              "title": "HierarchyView",
-              "default": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyView",
-              "configurations": [
+            "title": "Projects Browser",
+            "titleKey": "Title.ProjectsBrowser",
+            "showInMainMenu": true,
+            "id": "8BFC41F3-4CEF-4E37-9AAE-D61A9D189E53",
+            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.ProjectsBrowser",
+            "configurations": []
+        },
+        {
+            "title": "Metadata",
+            "titleKey": "Title.MetadataEditor",
+            "showInMainMenu": true,
+            "id": "4F000F64-9686-45D4-AF19-330889320537",
+            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.MetadataEditor.MetadataEditorPage",
+            "configurations": [
                 {
-                  "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyView",
-                  "components": [
-                    {
-                      "title": "DocumentView",
-                      "titleKey": "Title.DocumentView",
-                      "icon": "bi bi-file-earmark-richtext",
-                      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.DocumentView",
-                      "configurations": [
+                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.MetadataEditor.MetadataEditorPage",
+                    "components": [
                         {
-                          "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.DocumentItemContainer",
-                          "components": [
-                            {
-                              "title": "DocumentItem",
-                              "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DefaultDocumentItem",
-                              "specificTypes": [
+                            "title": "MetadataNavigation",
+                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.MetadataEditor.MetadataNavigation",
+                            "configurations": [
                                 {
-                                  "key": {
-                                    "id": "RC-Folder"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HeadingDocumentItem"
-                                },
-                                {
-                                  "key": {
-                                    "id": "RC-Requirement"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.RequirementDocumentItem"
-                                },
-                                {
-                                  "key": {
-                                    "id": "RC-Paragraph"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ParagraphDocumentItem"
-                                },
-                                {
-                                  "key": {
-                                    "id": "RC-Hierarchy"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HierarchyDocumentItem"
-                                },
-                                {
-                                  "key": {
-                                    "id": "RC-Diagram"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DiagramDocumentItem"
-                                },
-                                {
-                                  "key": {
-                                    "id": "RC-Actor"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ActorDocumentItem"
-                                },
-                                {
-                                  "key": {
-                                    "id": "RC-TestStep"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestStepDocumentItem"
-                                },
-                                {
-                                  "key": {
-                                    "id": "RC-TestCase"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestCaseDocumentItem"
-                                },
-                                {
-                                  "key": {
-                                    "id": "RC-TestModel"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestModelDocumentItem"
-                                },
-                                {
-                                  "key": {
-                                    "id": "RC-TestSuite"
-                                  },
-                                  "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestSuiteDocumentItem"
+                                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.MetadataEditor.MetadataNavigation",
+                                    "components": [
+                                        {
+                                            "title": "ResourceClasses",
+                                            "titleKey": "Title.ResourceClasses",
+                                            "icon": "bi bi-heptagon-fill",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.MetadataEditor.ResourceClassBrowser",
+                                            "configurations": [
+
+                                            ]
+                                        },
+                                        {
+                                            "title": "StatementClasses",
+                                            "titleKey": "Title.StatementClasses",
+                                            "icon": "bi bi-arrow-left-right",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.MetadataEditor.StatementClassBrowser",
+                                            "configurations": [
+
+                                            ]
+                                        },
+                                        {
+                                            "title": "PropertyClasses",
+                                            "titleKey": "Title.PropertyClasses",
+                                            "icon": "bi bi-card-text",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.MetadataEditor.PropertyClassBrowser",
+                                            "configurations": [
+
+                                            ]
+                                        },
+                                        {
+                                            "title": "DataTypes",
+                                            "titleKey": "Title.DataTypes",
+                                            "icon": "bi bi-code-slash",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.MetadataEditor.DataTypesBrowser",
+                                            "configurations": [
+
+                                            ]
+                                        },
+                                        {
+                                            "title": "DiagramObjectClasses",
+                                            "titleKey": "Title.DiagramObjectClasses",
+                                            "icon": "bi bi-images",
+                                            "default": "SpecIFicator.DiagramEditorPlugin.Views.DiagramObjectClassBrowser",
+                                            "configurations": [
+
+                                            ]
+                                        }
+
+                                    ]
                                 }
-                              ],
-                              "configurations": [
 
-                              ]
-                            }
-                          ]
-
+                            ]
                         }
-
-                      ]
-                    },
-                    {
-                      "title": "ResourceView",
-                      "titleKey": "Title.ResourceView",
-                      "icon": "bi bi-card-text",
-                      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.ResourceView"
-                    },
-                    {
-                      "title": "StatementBrowser",
-                      "titleKey": "Title.StatementBrowser",
-                      "icon": "bi bi-arrow-left-right",
-                      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.StatementBrowser.StatementBrowser"
-                    },
-                    {
-                      "title": "RevisionView",
-                      "titleKey": "Title.RevisionView",
-                      "icon": "bi bi-file-diff",
-                      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Revision.ResourceRevisionView"
-                    },
-                    {
-                      "title": "RawView",
-                      "titleKey": "Title.RawView",
-                      "icon": "bi bi-filetype-json",
-                      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.RawViewer"
-                    }
-                  ]
-
-
-
+                    ]
                 }
-
-              ]
-
-            }
-          ]
-
-        }
-
-
-
-      ]
-
-
-    },
-    {
-      "title": "TestExecution",
-      "showInMainMenu": false,
-      "id": "36AB7319-01C7-4F3F-9594-A89DBA0BC0A1",
-      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestExecutionPanel",
-      "configurations": [
+            ]
+        },
         {
-          "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestExecutionPanel",
-          "components": [
-            {
-              "title": "TestExecutionTree",
-              "default": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestExecutionTree",
-              "configurations": [
-
-              ]
-            },
-            {
-              "title": "TestExecutionView",
-              "default": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestExecutionView",
-              "configurations": [
-
-              ]
-
-            }
-          ]
-
-        }
-      ]
-    },
-    {
-      "title": "TestSuiteCreator",
-      "showInMainMenu": false,
-      "id": "FB5B66F3-F15B-46A8-BD16-F330A2C3CE7F",
-      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestSuiteCreator",
-      "configurations": [
-
-      ]
-    },
-    {
-      "title": "RequirementConsolidation",
-      "titleKey": "Title.RequirementConsolidation",
-      "showInMainMenu": true,
-      "id": "AD4F14B1-BCC2-4402-B4CD-BD746F862B56",
-      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.ConsolidationView",
-      "configurations": [
+            "title": "Logger",
+            "titleKey": "Title.Logger",
+            "showInMainMenu": true,
+            "id": "187CFC8A-6559-4568-83D6-E69BB6A33B6C",
+            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.DataStreams.DataStreamLoggerPage",
+            "configurations": []
+        },
         {
-          "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.ConsolidationView",
-          "components": [
-            {
-              "title": "DocumentConsolidationView",
-              "titleKey": "Title.DocumentView",
-              "icon": "bi bi-file-earmark-richtext",
-              "default": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.DocumentConsolidationView",
-              "configurations": [
-                {
-                  "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.DocumentConsolidationItemContainer",
-                  "components": [
-                    {
-                      "title": "DocumentItem",
-                      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DefaultDocumentItem",
-                      "specificTypes": [
-                        {
-                          "key": {
-                            "id": "RC-Folder"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HeadingDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Requirement"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.RequirementDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Paragraph"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ParagraphDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Hierarchy"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HierarchyDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Diagram"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DiagramDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Actor"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ActorDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-TestStep"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestStepDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-TestCase"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestCaseDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-TestModel"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestModelDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-TestSuite"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestSuiteDocumentItem"
-                        }
-                      ],
-                      "configurations": [
+            "title": "FileExport",
+            "showInMainMenu": false,
+            "id": "E4C606C2-E744-4022-A715-D44A4DFC85B6",
+            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.FileExport",
+            "configurations": []
+        },
+        {
+            "title": "HierarchyEditor",
+            "id": "3462ACA8-1AB1-442F-971B-975AF96E0017",
+            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyEditor",
+            "specificTypes": [
 
-                      ]
-                    }
-                  ]
+            ],
+            "configurations": [
+                {
+                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyEditor",
+                    "components": [
+                        {
+                            "title": "Tree",
+                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyTree",
+                            "configurations": [
+
+                            ]
+                        },
+                        {
+                            "title": "HierarchyView",
+                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyView",
+                            "configurations": [
+                                {
+                                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.HierarchyView",
+                                    "components": [
+                                        {
+                                            "title": "DocumentView",
+                                            "titleKey": "Title.DocumentView",
+                                            "icon": "bi bi-file-earmark-richtext",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.DocumentView",
+                                            "configurations": [
+                                                {
+                                                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.DocumentItemContainer",
+                                                    "components": [
+                                                        {
+                                                            "title": "DocumentItem",
+                                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DefaultDocumentItem",
+                                                            "specificTypes": [
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-Folder"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HeadingDocumentItem"
+                                                                },
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-Requirement"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.RequirementDocumentItem"
+                                                                },
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-Paragraph"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ParagraphDocumentItem"
+                                                                },
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-Hierarchy"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HierarchyDocumentItem"
+                                                                },
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-Diagram"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DiagramDocumentItem"
+                                                                },
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-Actor"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ActorDocumentItem"
+                                                                },
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-TestStep"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestStepDocumentItem"
+                                                                },
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-TestCase"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestCaseDocumentItem"
+                                                                },
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-TestModel"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestModelDocumentItem"
+                                                                },
+                                                                {
+                                                                    "key": {
+                                                                        "id": "RC-TestSuite"
+                                                                    },
+                                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestSuiteDocumentItem"
+                                                                }
+                                                            ],
+                                                            "configurations": [
+
+                                                            ]
+                                                        }
+                                                    ]
+
+                                                }
+
+                                            ]
+                                        },
+                                        {
+                                            "title": "ResourceView",
+                                            "titleKey": "Title.ResourceView",
+                                            "icon": "bi bi-card-text",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.ResourceView",
+
+                                        },
+                                        {
+                                            "title": "StatementBrowser",
+                                            "titleKey": "Title.StatementBrowser",
+                                            "icon": "bi bi-arrow-left-right",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.StatementBrowser.StatementBrowser"
+                                        },
+                                        {
+                                            "title": "RevisionView",
+                                            "titleKey": "Title.RevisionView",
+                                            "icon": "bi bi-file-diff",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Revision.ResourceRevisionView"
+                                        },
+                                        {
+                                            "title": "RawView",
+                                            "titleKey": "Title.RawView",
+                                            "icon": "bi bi-filetype-json",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.RawViewer"
+                                        }
+                                    ]
+
+
+
+                                }
+
+                            ]
+
+                        },
+                        {
+                            "title": "MainToolBar",
+                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.MainToolBar",
+                            "configurations": [
+                                {
+                                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.MainToolBar",
+                                    "components": [
+                                        {
+                                            "title": "ResourceEditor",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.ResourceEditor",
+                                            "specificTypes": [
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Diagram"
+                                                    },
+                                                    "typeName": "SpecIFicator.DiagramEditorPlugin.Views.DiagramEditor.ModalDiagramEditor"
+                                                }
+                                            ],
+                                            "configurations": [
+
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+
+                        }
+
+                    ]
 
                 }
 
-              ]
-            },
-            {
-              "title": "DesktopObjectView",
-              "icon": "bi bi-file-earmark-richtext",
-              "default": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.DesktopObjectView",
-              "configurations": [
-                {
-                  "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.DesktopObjectView",
-                  "components": [
-                    {
-                      "title": "DocumentItem",
-                      "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DefaultDocumentItem",
-                      "specificTypes": [
-                        {
-                          "key": {
-                            "id": "RC-Folder"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HeadingDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Requirement"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.RequirementDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Paragraph"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ParagraphDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Hierarchy"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HierarchyDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Diagram"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DiagramDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-Actor"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ActorDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-TestStep"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestStepDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-TestCase"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestCaseDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-TestModel"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestModelDocumentItem"
-                        },
-                        {
-                          "key": {
-                            "id": "RC-TestSuite"
-                          },
-                          "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestSuiteDocumentItem"
-                        }
-                      ],
-                      "configurations": [
 
-                      ]
-                    }
-                  ]
+
+            ]
+
+
+        },
+        {
+            "title": "TestExecution",
+            "showInMainMenu": false,
+            "id": "36AB7319-01C7-4F3F-9594-A89DBA0BC0A1",
+            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestExecutionPanel",
+            "configurations": [
+                {
+                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestExecutionPanel",
+                    "components": [
+                        {
+                            "title": "TestExecutionTree",
+                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestExecutionTree",
+                            "configurations": [
+
+                            ]
+                        },
+                        {
+                            "title": "TestExecutionView",
+                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestExecutionView",
+                            "configurations": [
+
+                            ]
+
+                        }
+                    ]
 
                 }
+            ]
+        },
+        {
+            "title": "TestSuiteCreator",
+            "showInMainMenu": false,
+            "id": "FB5B66F3-F15B-46A8-BD16-F330A2C3CE7F",
+            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.TestExecution.TestSuiteCreator",
+            "configurations": [
 
-              ]
-            }
-          ]
+            ]
+        },
+        {
+            "title": "RequirementConsolidation",
+            "titleKey": "Title.RequirementConsolidation",
+            "showInMainMenu": true,
+            "id": "AD4F14B1-BCC2-4402-B4CD-BD746F862B56",
+            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.ConsolidationView",
+            "configurations": [
+                {
+                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.ConsolidationView",
+                    "components": [
+                        {
+                            "title": "DocumentConsolidationView",
+                            "titleKey": "Title.DocumentView",
+                            "icon": "bi bi-file-earmark-richtext",
+                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.DocumentConsolidationView",
+                            "configurations": [
+                                {
+                                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.DocumentConsolidationItemContainer",
+                                    "components": [
+                                        {
+                                            "title": "DocumentItem",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DefaultDocumentItem",
+                                            "specificTypes": [
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Folder"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HeadingDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Requirement"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.RequirementDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Paragraph"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ParagraphDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Hierarchy"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HierarchyDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Diagram"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DiagramDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Actor"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ActorDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-TestStep"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestStepDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-TestCase"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestCaseDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-TestModel"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestModelDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-TestSuite"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestSuiteDocumentItem"
+                                                }
+                                            ],
+                                            "configurations": [
+
+                                            ]
+                                        }
+                                    ]
+
+                                }
+
+                            ]
+                        },
+                        {
+                            "title": "DesktopObjectView",
+                            "icon": "bi bi-file-earmark-richtext",
+                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.DesktopObjectView",
+                            "configurations": [
+                                {
+                                    "appliesTo": "SpecIFicator.DefaultPlugin.BlazorComponents.RequirementConsolidation.DesktopObjectView",
+                                    "components": [
+                                        {
+                                            "title": "DocumentItem",
+                                            "default": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DefaultDocumentItem",
+                                            "specificTypes": [
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Folder"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HeadingDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Requirement"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.RequirementDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Paragraph"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ParagraphDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Hierarchy"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.HierarchyDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Diagram"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.DiagramDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-Actor"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.ActorDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-TestStep"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestStepDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-TestCase"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestCaseDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-TestModel"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestModelDocumentItem"
+                                                },
+                                                {
+                                                    "key": {
+                                                        "id": "RC-TestSuite"
+                                                    },
+                                                    "typeName": "SpecIFicator.DefaultPlugin.BlazorComponents.Document.Items.TestSuiteDocumentItem"
+                                                }
+                                            ],
+                                            "configurations": [
+
+                                            ]
+                                        }
+                                    ]
+
+                                }
+
+                            ]
+                        }
+                    ]
+                }
+
+            ]
         }
-
-      ]
-    }
-  ]
+    ]
 
 }

@@ -80,6 +80,8 @@ namespace SpecIFicator.Apps.BlazorWPF
 
             services.AddScoped<ClipboardDataProvider>();
 
+            services.AddSingleton<DragDropDataProvider>();
+
             services.AddSingleton<IFileSaver>(fileSaver =>
             {
                 return new WpfFileSaver();

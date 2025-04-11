@@ -26,8 +26,8 @@
     <ItemGroup>
       <ProjectReference Include="..\..\..\MDD4All.FileAccess.WPF\src\MDD4All.FileAccess.WPF\MDD4All.FileAccess.WPF-dev.csproj" />
       <ProjectReference Include="..\..\..\SpecIFicator.Framework\src\SpecIFicator.Framework\SpecIFicator.Framework-dev.csproj" />
-      <ProjectReference Include="..\..\..\SplitJs.Blazor\src\SplitJs.Blazor\SplitJs.Blazor-dev.csproj" />      <ProjectReference Include="..\..\..\Summernote\src\BlazingComponents.Summernote\BlazingComponents.Summernote-dev.csproj" />
-
+      <ProjectReference Include="..\..\..\SplitJs.Blazor\src\SplitJs.Blazor\SplitJs.Blazor-dev.csproj" />      
+      <ProjectReference Include="..\..\..\Summernote\src\BlazingComponents.Summernote\BlazingComponents.Summernote-dev.csproj" />
       <ProjectReference Include="..\..\..\VisNetwork.Blazor\src\VisNetwork.Blazor\VisNetwork.Blazor-dev.csproj" />
     </ItemGroup>
 
