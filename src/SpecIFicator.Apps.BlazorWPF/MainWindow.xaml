@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:SpecIFicator.Apps.BlazorWPF"
         xmlns:framework="clr-namespace:SpecIFicator.Framework;assembly=SpecIFicator.Framework"
         mc:Ignorable="d"
-        Title="SpecIFicator" 
+        Title="SpecIFicator Editor" 
         Height="900" 
         Width="1400"
         WindowStartupLocation="CenterScreen">

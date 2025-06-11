@@ -112,7 +112,7 @@ namespace SpecIFicator.Apps.BlazorWPF
             System.Diagnostics.FileVersionInfo fileVersionInfo = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
             string version = fileVersionInfo.FileVersion;
 
-            Title = "SpecIFicator | " + version;
+            Title = "SpecIFicator Editor | " + version;
         }
 
         private async void OnMainWindowLoaded(object sender, RoutedEventArgs e)
